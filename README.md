@@ -11,9 +11,10 @@ Este repositorio contiene:
 * El modelo relacional (físico) exportado desde pgAdmin.
 
 ## Versión Actual
-* **Versión:** 1.0.0
-* **Fecha de Actualización:** 06/11/2025
+* **Versión:** 1.1
+* **Fecha de Actualización:** 25/11/2025
 * **Últimos cambios:**
-    * Corrección de llaves foráneas.
-    * Ajuste del tipo de dato `telephone_student` a `varchar(20)`.
-    * Definición de todas las relaciones (`ALTER TABLE`).
+    * Adicion de tablas `skills` y `messages` en el Modelo Entidad-Relacion.
+    * Adición de tablas `skills`,`skills_offers`,`student_offers` en el Modelo Relacional.
+    * Actualizacion de tablas y de script en el SQL de PostgreSQL.
+    
