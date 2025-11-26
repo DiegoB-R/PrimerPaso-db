@@ -11,10 +11,19 @@ Este repositorio contiene:
 * El modelo relacional (físico) exportado desde pgAdmin.
 
 ## Versión Actual
-* **Versión:** 1.1
-* **Fecha de Actualización:** 25/11/2025
+* **Versión:** 1.
+* **Fecha de Actualización:** 2/11/2025
 * **Últimos cambios:**
-    * Refactorización completa del esquema utilizando UUIDs (`gen_random_uuid()`).
-    * Normalización de usuarios: Tabla central `users` con roles, separada de `student_profiles` y `company_profiles`.
-    * Nuevas tablas para `jobs`, `applications`, `saved_jobs` y `events`.
-    * Inclusión del archivo `Primer Paso SQL/V1.1.sql`.
+
+
+*Implementación del sistema "Inbox": Se sustituyó la tabla simple de mensajes por un modelo de hilos de conversación (Tickets) entre Estudiantes y Empresas.
+
+*Nueva estructura de mensajería: Creación de las tablas inbox, inbox_messages (mensajes del estudiante) e inbox_responses (respuestas de la empresa).
+
+*Normalización de estados: Inclusión de la tabla statuses para gestionar el estado de los chats (Pendiente/Contestado) con asignación automática por defecto.
+
+*Documentación del esquema: Se agregaron comentarios explicativos detallados ("Docstrings") a todas las tablas y relaciones del script SQL.
+
+*Limpieza de esquema: Eliminación de tablas obsoletas (messages) y ajuste de relaciones foráneas.
+
+Archivo: Primer Paso SQL/V1.2.sql
