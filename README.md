@@ -14,7 +14,7 @@ Este repositorio contiene:
 * **Versión:** 1.1
 * **Fecha de Actualización:** 25/11/2025
 * **Últimos cambios:**
-    * Adicion de tablas `skills` y `messages` en el Modelo Entidad-Relacion.
-    * Adición de tablas `skills`,`skills_offers`,`student_offers` en el Modelo Relacional.
-    * Actualizacion de tablas y de script en el SQL de PostgreSQL.
-    
+    * Refactorización completa del esquema utilizando UUIDs (`gen_random_uuid()`).
+    * Normalización de usuarios: Tabla central `users` con roles, separada de `student_profiles` y `company_profiles`.
+    * Nuevas tablas para `jobs`, `applications`, `saved_jobs` y `events`.
+    * Inclusión del archivo `Primer Paso SQL/V1.1.sql`.
